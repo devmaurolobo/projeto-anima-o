@@ -156,8 +156,9 @@ h4 {
 }
 
 .add-card img {
-    height: 45px;
-    width: 45px;
+    height: 100%;
+    width: 100%;
+    max-width: 55px;
 }
 
 .social-link {
@@ -170,7 +171,52 @@ h4 {
     height: 20px;
     margin: 20px;
     cursor: pointer;
-
-
 }
+
+.menu-icon{
+    width: 25px;
+    margin: 10px;
+    display: none;
+}
+
+/*media query*/
+@media (max-width: 760px){
+
+    .row{
+        flex-direction: column-reverse;
+    }
+
+    .colloumn-2{
+        margin-bottom: 30px;
+    }
+
+    .color-box{
+        transform: translate(70px);
+    }
+    .container{
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        overflow-y: auto;
+    }
+
+  #menu-list{
+    position: relative;
+    top: 60px;
+    left: 60px;
+    overflow: hidden;
+}
+  .menu-icon{
+    display: block;
+    cursor: pointer;
+}
+.nav-li{
+    display: block;
+    margin-top: 5px;
+}
+}
+
+
+    
+
 
