@@ -1,31 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
-    <title>Previsão do tempo</title>
+    <link href="https: //fonts.googleapis.com/css2?family= Roboto & display=swap" rel="stylesheet" > 
+    <link rel="stylesheet" href="style.css">  
+    <title>Playstation</title>
 </head>
-    <body>
-        <div class="box-one">
-            <input class="city" placeholder="Digite o nome da cidade">
-            <button class="button-src" onclick="clicksrc()">
-                <img class="img-src" alt= "busca"src="./find.svg">
-            </button>
-            <div class="box-two">
-                <h2 class="localization">Tempo em São Paulo</h2>
-                <p class="temp">20ºC</p>
-                <div class="box-tree">
-                    <img class="img-prev" alt="icone-info-tempo" src="./nv.png">
-                    <P class="text-prev">Nuvens Dispersas</p>
-                </div>
-                <p class="water">umidade</p>
-            </div>
+<body>
+    <div class = "container">
+
+        <div class ="navbar">
+            <img class =  "logo" src="./logo.png">
+            <nav> 
+                <ul id= "menu-list">
+                    <li class="nav-li"><a class="nav-link">Consoles</a></li>
+                    <li class="nav-li"><a class="nav-link">Acessorios</a></li>
+                    <li class="nav-li"><a class="nav-link">Controles</a></li>
+                    <li class="nav-li"><a class="nav-link">Outros</a></li>
+                </ul>
+            </nav>
+            <img src ="bottow.png" class = "menu-icon" onclick="showMenu()">
         </div>
-    </body>
+
+        <div class ="row">
+            <div class = "colloumn-1">
+                <h2>PS5 Dualshock</h2>
+                <h3>Wirelles Controller for Playstation</h3>
+                <p>Controle Original</p>
+                <h4>R£ 222,50</h4>
+                <button class ="buy">Comprar agora</button>
+            </div>
+
+            <div class = "colloumn-2">
+                <img class = "controller " src=./controller.png " alt="controle">
+                <div class = "color-box"></div>
+                <button class = "add-card">
+                    <img src="./menu.png" alt="adicionar-ao-carrinho">
+                </button>
+            </div>
+
+        </div>
+
+        <div class="social-link">
+            <img src="./fb.png">
+            <img src="./ig.png">
+            <img src="./tw.png">
+        </div>
+
+    </div>
+</body>
+<script>
+    const menuList = document.getElementById ("menu-list");
+    menuList.style.maxHeight = "0px"
+    
+    function showMenu(){
+        if (menuList.style.maxHeight == "0px"){
+            menuList.style.maxHeight = "120px"
+        }else {
+        menuList.style.maxHeight = "0px"
+    }
+}
+</script>
 </html>
